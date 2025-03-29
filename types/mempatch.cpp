@@ -200,5 +200,5 @@ cell_t sm_MemoryIsPatchEnabled(IPluginContext *pContext, const cell_t *params) {
 		return pContext->ThrowNativeError("Invalid MemoryPatch handle %x (error %d)", hndl, err);
 	}
 	
-	return (cell_t)pMemoryPatch->enabled;
+	return pMemoryPatch->enabled;
 }
